@@ -1,0 +1,12 @@
+<% if @student.active %>
+  <% @student.active = false %>
+<% else %>
+  <% @student.active = true %>
+<% end %>
+<% @student.save %>
+
+
+<!-- <p>Would you like to active this student?</p>
+<%= form_tag("/student/#{@student.id}", method: :patch) do %>
+<%= submit_tag "Activate Student" %>
+<% end %> -->
